@@ -64,7 +64,7 @@
             <label class="mdl-button mdl-js-button mdl-button--icon" for="search">
               <i class="material-icons">search</i>
             </label>
-           <!--  <div class="mdl-textfield__expandable-holder">
+          <!--   <div class="mdl-textfield__expandable-holder">
               <input class="mdl-textfield__input" type="text" id="search">
               <label class="mdl-textfield__label" for="search">Enter your query...</label>
             </div> -->
@@ -73,32 +73,75 @@
       </header>
       <div class="demo-ribbon"></div>
       <main class="demo-main mdl-layout__content">
-        
+
         <div class="demo-card-wide mdl-card mdl-shadow--2dp">
           
-          <div class="mdl-card__title">
-            
-          </div>
-          <div class="mdl-card__actions mdl-card--border it">
-          <h5>Chillr Love T-Shirt</h5>
+          <div class="mdl-card__title new">
+            <h2 class="mdl-card__title-text">Tell us your size.</h2>
           </div>
 
-          <div class="mdl-card__supporting-text">
-            As soft as the breeze on a summer‘s day, as jaunty as a spring lamb and as unique as a snowflake, this is the first t-shirt in our specially commissioned Slack Artist Series.
+          <div class="mdl-card__actions mdl-card--border shirt-size">
+              Select your size <br><br>
+              <!-- Size selection -->
+              <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
+                <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1">
+                <span class="mdl-radio__label">Small</span>
+              </label>
+              <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
+                <input type="radio" id="option-2" class="mdl-radio__button" name="options" value="2" checked>
+                <span class="mdl-radio__label">Medium</span>
+              </label>
+              <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-3">
+                <input type="radio" id="option-3" class="mdl-radio__button" name="options" value="3">
+                <span class="mdl-radio__label">Large</span>
+              </label>
+              <!--End * Size selection -->
           </div>
-        
+
+          <div class="mdl-card__title new">
+            <h2 class="mdl-card__title-text">Tell us more about you!</h2>
+          </div>
+
+          <div class="mdl-card__actions mdl-card--border adr">
+          
+          <form action="#">
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+              <input class="mdl-textfield__input" type="text" id="name">
+              <label class="mdl-textfield__label" for="name">Name</label>
+            </div>
+          </form>
+
+          <form action="#">
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+              <input class="mdl-textfield__input" type="text" rows= "3" id="address">
+              <label class="mdl-textfield__label" for="address">Mobile Number</label>
+            </div>
+          </form>
+
+          <form action="#">
+            <div class="mdl-textfield mdl-js-textfield">
+              <textarea class="mdl-textfield__input" type="text" rows= "3" id="sample5" ></textarea>
+              <label class="mdl-textfield__label" for="sample5">Address</label>
+            </div>
+          </form>
+
+          <form action="#">
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+              <input class="mdl-textfield__input" type="text" rows= "3" id="address">
+              <label class="mdl-textfield__label" for="address">PIN Code</label>
+            </div>
+          </form>
+
+          </div>
 
           <div class="mdl-card__actions mdl-card--border">
-            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-              PURCHASE NOW
+            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="#">
+              PAY NOW
             </a>
           </div>
-          <div class="mdl-card__menu">
-            <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-              <i class="material-icons">share</i>
-            </button>
-          </div>
+
         </div>
+
         <footer class="demo-footer mdl-mini-footer">
           <div class="mdl-mini-footer--left-section">
             <ul class="mdl-mini-footer--link-list">
@@ -110,6 +153,7 @@
         </footer>
       </main>
     </div>
+    <a href="https://github.com/google/material-design-lite/blob/master/templates/article/" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">View Source</a>
     <script defer src="https://code.getmdl.io/1.1.2/material.min.js"></script>
   </body>
 </html>

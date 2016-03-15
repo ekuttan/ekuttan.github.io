@@ -23,6 +23,30 @@
     background-color: #22D296;
 }
 
+.mdl-card__actions.mdl-card--border.it {
+    padding: 15px;
+}
+
+.mdl-card__actions.mdl-card--border.it h5 {
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+
+.demo-card-wide > .mdl-card__title.new {
+    background: #fff;
+    height: 60px;
+    color: #ddd;
+}
+
+.mdl-card__actions.mdl-card--border.adr {
+    padding: 10px 15px;
+}
+
+h2.mdl-card__title-text {
+    font-size: 18px;
+    color: #4CAF50;
+}
+
 label.mdl-radio {
     margin-right: 20px;
 }
