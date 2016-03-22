@@ -66,6 +66,12 @@ label.mdl-radio {
   margin: 0 auto;
 }
 
+img.emoji {  
+  // Override any img styles to ensure Emojis are displayed inline
+  margin: 0px !important;
+  display: inline !important;
+}
+
 .demo-content {
   border-radius: 2px;
   padding: 80px 56px;
@@ -116,4 +122,30 @@ span.mdl-layout-title img {
     color: gray;
     font-weight: 100;
     font-size: 1em;
+}
+
+.status_emoji {
+    font-size: 125px;
+    text-align: center;
+    padding-top: 90px;
+    padding-bottom: 45px;
+}
+
+.status_text {
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 1.2;
+    letter-spacing: -0.7px;
+    padding: 25px;
+    text-align: center;
+    color: #757575;
+}
+
+.status_text span {
+    font-size: 19px;
+    display: inherit;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    color: #bdbdbd;
 }
