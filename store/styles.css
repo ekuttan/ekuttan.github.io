@@ -149,3 +149,8 @@ span.mdl-layout-title img {
     padding-bottom: 15px;
     color: #bdbdbd;
 }
+
+.mdl-card__actions.mdl-card--border {
+    text-align: center;
+}
+
