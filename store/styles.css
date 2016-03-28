@@ -30,6 +30,7 @@
 .mdl-card__actions.mdl-card--border.it h5 {
     margin-top: 15px;
     margin-bottom: 0px;
+
 }
 
 .demo-card-wide > .mdl-card__title.new {
@@ -150,7 +151,7 @@ span.mdl-layout-title img {
     color: #bdbdbd;
 }
 
-.mdl-card__actions.mdl-card--border {
+.retry {
     text-align: center;
 }
 
