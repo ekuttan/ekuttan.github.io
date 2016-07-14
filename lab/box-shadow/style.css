@@ -1,0 +1,29 @@
+body {
+	font-family: Gotham;
+	font-size: 16px;
+	line-height: 1.2;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.container	{
+	margin: 0px auto;
+}
+
+.r1	{
+	min-height: 500px;
+	background-color: #F5F7F9;
+	width: 960px;
+}
+
+.xbox {
+	width: 300px;
+	height: 150px;
+	background: #fff;
+	-webkit-box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.02), 0px 4px 10px 0px rgba(0,0,0,0.08);
+    box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.02), 0px 4px 10px 0px rgba(0,0,0,0.08);
+    border-radius: 8px;
+    margin: auto;
+    padding: auto;
+}
+
