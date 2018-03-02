@@ -1,0 +1,8 @@
+.container {
+    margin: 0 auto;
+    width: 600px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f1c232;
+    font-size: 2em;
+}
