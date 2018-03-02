@@ -3,6 +3,10 @@
     width: 600px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    color: #f1c232;
+    color: #fff;
     font-size: 2em;
+}
+
+body {
+  background: #fde645;
 }
