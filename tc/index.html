@@ -5,23 +5,24 @@
 	<link rel="stylesheet" href="main.css">
 	
 	<link rel="icon" href="https://www.truecaller.com/favicon.ico">
-	<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
-	<script src="js/jquery.prefix-input.js"></script>
 
 	<title>Truecaller Pay</title>
 </head>
 <body>
-	<div class="container">
-		<div class="header">
+	<div class="header">
 			Truecaller Pay
-		</div>
+	</div>
+	<div class="container">
+		<div class="logo"><img src="kg.png" alt=""></div>
+		<div class="name">Kerala Flood Relief</div>
+		<div class="vpa">keralacmdrf@sbi</div>
 		<div class="fields">
 			<form action="">
 				<div class="amount">
-					<input class="ibacor_fi" type="number" pattern="\d*" name="amount" min="1" max="100000" placeholder="₹ 0.00" data-prefix="₹">
+					<input class="ibacor_fi" type="text" name="amount" minlength="1" max="100000" maxlength="6" placeholder="₹ 0.00" data-prefix="₹" required>
 				</div>
 				<div class="vpa">
-					<input class="vpa_class" type="text" name=payee-vpa" placeholder="Enter your VPA" maxlength=80 minlength=6>
+					<input class="vpa_class" type="text" name=payee-vpa" placeholder="Enter your VPA" maxlength=45 minlength=6 required>
 				</div>
 				<div class="remark">
 					<input class="remark_class" type="text" name="firstname" maxlength=10 placeholder="Remark (Optional)">
@@ -31,7 +32,8 @@
 				</div>
 			</form>
 		</div>
-
+			<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+			<script src="js/jquery.prefix-input.js"></script>
 		<div class="info">
 			this is some help text
 		</div>

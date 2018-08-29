@@ -44,11 +44,12 @@ input {
     padding: 10px;
 }
 
-input[type="number"] {
+.amount>input {
     text-align: center;
-    font-size: 4em;
+    font-size: 6em;
     background: none;
     color: white;
+    padding: 16px;
 }
 
 button {
@@ -88,4 +89,20 @@ button:focus {
 
 ::placeholder {
     color: #bbb;
+}
+
+.logo img {
+    height: 96px;
+    padding: 6px;
+}
+
+.name {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+
+.vpa {
+    font-style: initial;
+    color: #ffffffc2;
 }
