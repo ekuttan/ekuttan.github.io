@@ -72,8 +72,8 @@ button {
 .info {
     font-family: sans-serif;
     padding: 36px 0px;
-    color: #ffffffa1;
-    font-size: 10px;
+    color: #ffffff;
+    font-size: 12px;
 }
 
 input:focus,
@@ -105,4 +105,10 @@ button:focus {
 .vpa {
     font-style: initial;
     color: #ffffffc2;
+}
+
+img.verified {
+    vertical-align: middle;
+    height: 24px;
+    padding-left: 8px;
 }

@@ -9,23 +9,21 @@
 	<title>Truecaller Pay</title>
 </head>
 <body>
-	<div class="header">
-			Truecaller Pay
-	</div>
+
 	<div class="container">
 		<div class="logo"><img src="kg.png" alt=""></div>
-		<div class="name">Kerala Flood Relief</div>
+		<div class="name">Kerala Flood Relief <img src="veri.svg" class="verified" alt="Verified"></div>
 		<div class="vpa">keralacmdrf@sbi</div>
 		<div class="fields">
 			<form action="">
 				<div class="amount">
-					<input class="ibacor_fi" type="text" name="amount" minlength="1" max="100000" maxlength="6" placeholder="₹ 0.00" data-prefix="₹" required>
+					<input class="ibacor_fi" type="text" name="amount" minlength="1" max="100000" maxlength="6" placeholder="₹ 0.00" autocomplete="off" data-prefix="₹" required>
 				</div>
 				<div class="vpa">
-					<input class="vpa_class" type="text" name=payee-vpa" placeholder="Enter your VPA" maxlength=45 minlength=6 required>
+					<input class="vpa_class" type="text" name="payee-vpa" placeholder="Enter your VPA" maxlength=45 autocomplete="off" minlength=6 required >
 				</div>
 				<div class="remark">
-					<input class="remark_class" type="text" name="firstname" maxlength=10 placeholder="Remark (Optional)">
+					<input class="remark_class" type="text" name="remark" maxlength=10 placeholder="Remark (Optional)" autocomplete="off">
 				</div>
 				<div class="cta">
 					<button type="submit">PAY NOW</button>
@@ -35,7 +33,7 @@
 			<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
 			<script src="js/jquery.prefix-input.js"></script>
 		<div class="info">
-			this is some help text
+			Powered by Truecaller Pay ・ Build in 🇮🇳
 		</div>
 	</div>
 </body>
