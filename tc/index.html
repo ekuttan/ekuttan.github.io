@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="main.css">
+
+	<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script src="js/jquery.prefix-input.js"></script>
+
+	<title>Truecaller Pay</title>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			Truecaller Pay
+		</div>
+		<div class="fields">
+			<form action="">
+				<div class="amount">
+					<input class="ibacor_fi" type="number" name="amount" min="1" max="100000" placeholder="₹ 0.00" data-prefix="₹">
+				</div>
+				<div class="vpa">
+					<input class="vpa_class" type="text" name=payee-vpa" placeholder="Enter your VPA" maxlength="80" minlength="6">
+				</div>
+				<div class="remark">
+					<input class="remark_class" type="text" name="firstname" maxlength=10 placeholder="Remark (Optional)">
+				</div>
+				<div class="cta">
+					<button type="submit">PAY NOW</button>
+				</div>
+			</form>
+		</div>
+
+		<div class="info">
+			this is some help text
+		</div>
+	</div>
+</body>
+</html>
