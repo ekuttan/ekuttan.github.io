@@ -1,0 +1,85 @@
+body {
+    font-family: 'Abhaya Libre', serif;
+    font-size: 30px;
+    color: #323232;
+}
+
+/*menu-item*/
+
+.row.r1 {
+    padding: 30px 0px;
+}
+
+.col-md-6.tagline h4 {
+    font-size: 20px;
+    color: #a2a2a2;
+}
+
+.col-md-6.menu-item {
+    font-size: 20px;
+    text-align: right;
+}
+
+.menu-item ul {
+    display: inline;
+}
+
+.menu-item li {
+    display: inline;
+}
+
+.menu-item li a {
+    color: #323232;
+    padding-left: 30px;
+}
+
+.menu-item li a:hover {
+    text-decoration: none;
+    color: #E81633;
+}
+
+/*master*/
+.col-md-12.master {
+    padding-left: 0px;
+    font-family: 'Righteous', cursive;
+    font-size: 90pt;
+    color: #0A0C64;
+    letter-spacing: -6px;
+    padding-bottom: 36px;
+}
+
+.row.r4 {
+    font-size: 15px;
+    border-top: 2px solid #ddd;
+    padding-top: 20px;
+    margin-top: 20pt;
+    color: #a2a2a2;
+    padding-left: 15px;
+    padding-bottom: 20px;
+}
+
+.row.r4 a {
+    color: #0A0C64;
+}
+
+.row.r4 a:hover {
+    text-decoration: none;
+    color: #E81633;
+}
+
+
+.row.r4 h3 {
+    margin-top: 0px;
+}
+
+.row.r4 h5 a {
+    color: #323232;
+    font-size: 18px;
+}
+
+/*.col-md-12.master span {
+	color: #E81633;
+}*/
+
+
+
