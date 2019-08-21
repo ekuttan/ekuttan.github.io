@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'meeraregular';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://smc.org.in/downloads/fonts/meera/Meera.woff2?v=7.0) format('woff2'), url(https://smc.org.in/downloads/fonts/meera/Meera.woff?v=7.0) format('woff'), url(https://smc.org.in/downloads/fonts/meera/Meera.ttf?v=7.0) format('truetype');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+0D01-0D7F, U+200C-U+200D, U+25CC;
+}
+
+body {
+	font-family: 'meeraregular';
+}
+
+.mi img {
+	max-width: 100%;
+}
+
+.break-out{
+  width: 100vw;
+  position: relative;
+  left: calc(-1 * (100vw - 100%) / 2);
+  padding: 0px !important;
+}
+
