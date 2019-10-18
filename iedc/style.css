@@ -33,3 +33,7 @@
 .bttn2 a {
     color: #0066ff;
 }
+
+a:hover:focus:active {
+	text-decoration: none;	
+}
