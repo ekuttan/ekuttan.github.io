@@ -37,3 +37,12 @@
 a, a:hover, a:active, a:visited, a:focus {
     text-decoration:none;
 }
+
+span {
+    color: #bbb;
+}
+
+.note {
+    padding-bottom: 20px;
+    border-bottom: 1px #DDD solid;
+}
