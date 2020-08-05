@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="master.css">
 </head>
 <body class="text-secondary bg-white font-mono antialiased">
+
   <!-- Navigation -->
-  <div class="flex bg-white container md:flex-row flex-col md:border-b md:border-gray-400 items-center py-2">
+  <div class="flex bg-white container md:flex-row flex-col md:border-b md:border-gray-400 md:fixed items-center py-2 top-0 inset-x-0 z-100 h-16">
     <div class="font-bold text-lg text-center md:text-left w-1/2 py-4 md:py-4">
       Amber Health
     </div>
@@ -23,7 +24,7 @@
   </div>
   
   <!-- Master -->
-  <div class="container text-center h-auto py-16 md:py-24">
+  <div class="container text-center h-auto py-40 md:py-40 block">
     <h4 class="font-bold text-4xl md:text-6xl ">Give Plasma, Save <span class="bg-primary px-2"> Life</span></h4>
     <p class="text-gray-700">Plasma from recovered COVID-19 patients is urgently needed across hospitals in India.</p>
   </div>
@@ -48,7 +49,7 @@
       <div class="py-8 h-12 w-12 m-auto">
         <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="#F8EC36"><path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
       </div>
-      <div class="py-12">Register as a Plasma donor by filling a simple <a href="#" class="border-b border-primary">form</a></div>
+      <div class="py-12">Register as a Plasma donor by filling a simple <a href="https://docs.google.com/forms/d/16mUwE4ZhwU9K-ZPYYXkMyCjUF-N8tkftxTBR5NoJIVo/edit?usp=sharing" class="border-b border-primary">form</a></div>
     </div>
     
     <div class="px-8 md:w-1/3 md:px-24">
@@ -67,8 +68,13 @@
   </div>
 
   <!-- Footer -->
-  <div class="flex py-16 text-gray-600 text-center text-sm">
-    <p class="text-center w-full">Built in 🇮🇳 with 💖</p>
+  <div class="flex flex-wrap py-16 text-gray-600 text-center text-sm container">
+    <div class="w-full md:w-1/2 md:text-left">
+      <span class="pb-4 block">In association with</span><img src="img/manipal.png" class="w-40 mx-auto md:mx-0">
+    </div>
+    <div class="w-full md:w-1/2">
+      <p class="mt-16 md:mt-0 md:text-right block">Built in 🇮🇳 with 💖</p>
+    </div>
   </div>
   
 </body>
