@@ -21,26 +21,16 @@ export default {
             right: "0",
             top: "-32px",
             transformOrigin: "0 0",
-            transform: "scaleX(0.85)",
-          },
-          "25%": {
-            transform: "scaleX(1.05), skewX(-3deg)",
           },
           "50%": {
             right: "20px",
-            transform: "scaleX(1), skewX(0deg)",
           },
           "55%": {
             right: "20px",
             transformOrigin: "100% 0",
-            transform: "scaleX(0.9)",
-          },
-          "75%": {
-            transform: "scaleX(1.05), skewX(3deg)",
           },
           "100%": {
             right: "0",
-            transform: "scaleX(1), skewX(0deg)",
           },
         },
         tinkererMin: {
@@ -52,26 +42,16 @@ export default {
             right: "0",
             top: "0px",
             transformOrigin: "0 0",
-            transform: "scaleX(0.85)",
-          },
-          "25%": {
-            transform: "scaleX(1.05), skewX(-3deg)",
           },
           "50%": {
             right: "20px",
-            transform: "scaleX(1), skewX(0deg)",
           },
           "55%": {
             right: "20px",
             transformOrigin: "100% 0",
-            transform: "scaleX(0.9)",
-          },
-          "75%": {
-            transform: "scaleX(1.05), skewX(3deg)",
           },
           "100%": {
             right: "0",
-            transform: "scaleX(1), skewX(0deg)",
           },
         },
         human: {
@@ -117,26 +97,17 @@ export default {
             top: "32px",
             transformOrigin: "0 0",
           },
-          "25%": {
-            transform: "skewX(-3deg)",
-          },
           "50%": {
             right: "75%",
             top: "26px",
-            transform: "skewX(0deg)",
           },
           "55%": {
             right: "75%",
             top: "26px",
-            transformOrigin: "100% 0",
-          },
-          "75%": {
-            transform: "skewX(3deg)",
           },
           "100%": {
             right: "50%",
             top: "32px",
-            transform: "skewX(0deg)",
           },
         },
         design: {
