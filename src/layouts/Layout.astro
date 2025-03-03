@@ -12,7 +12,19 @@ const { title } = Astro.props;
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
+    <link rel="canonical" href="https://ekuttan.in" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ekuttan.in" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content="An Ideapreneur who codes and design experience. Building coolest P2P mobile payment app in India at @mychillr / co-founder @tinkerhub" />
+    <meta property="og:image" content="https://ekuttan.in/abid.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://ekuttan.in" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content="An Ideapreneur who codes and design experience. Building coolest P2P mobile payment app in India at @mychillr / co-founder @tinkerhub" />
+    <meta name="twitter:image" content="https://ekuttan.in/abid.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link

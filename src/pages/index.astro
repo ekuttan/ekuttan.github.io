@@ -2,18 +2,20 @@
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Abid Aboobaker">
+<Layout title="Abid Aboobaker - Ideapreneur, Developer & Co-founder">
   <main
     class="flex sm:bg-background bg-white sm:flex-row sm:space-y-0 space-y-[78px] sm:space-x-4 flex-col sm:justify-between sm:h-screen h-full sm:max-h-screen w-full text-black xl:px-[140px] sm:px-10 px-6 2xl:max-w-[1440px] 2xl:w-screen 2xl:mx-auto"
+    itemscope itemtype="http://schema.org/Person"
   >
     <div
       class="flex flex-col justify-between min-w-[170px] items-start h-full sm:justify-between sm:pb-[98px] sm:pt-[105px] sm:py-0 pt-[123px]"
     >
-      <button class="flex group relative">
+      <button class="flex group relative" aria-label="View profile picture">
         <img
           src="/logo.png"
           class="sm:w-[170px] w-[100px] pl-1 sm:pl-0 h-auto"
-          alt="logo"
+          alt="Abid Aboobaker's Logo"
+          itemprop="logo"
         />
         <div
           class="absolute -right-20 z-50 -top-11 invisible group-hover:visible group-hover:animate-fadeIn"
@@ -21,7 +23,8 @@ import Layout from "../layouts/Layout.astro";
           <img
             src="/abid.png"
             class="sm:h-[284px] w-[100px] w-auto"
-            alt="abid"
+            alt="Portrait of Abid Aboobaker"
+            itemprop="image"
           />
         </div>
       </button>
@@ -29,11 +32,13 @@ import Layout from "../layouts/Layout.astro";
         <div class="flex group">
           <button
             class="group-hover:hidden flex text-base font-medium text-black tracking-[-0.48px] px-4 py-2 bg-secondary border border-black rounded-[40px]"
+            aria-label="Contact me"
           >
             write to me
           </button>
           <button
             class="copy-button group-hover:flex whitespace-nowrap group-hover:animate-fadeInLeft hidden text-base font-medium text-white tracking-[-0.48px] px-4 py-2 bg-black rounded-[40px]"
+            aria-label="Copy email address"
           >
             📫 copy email
           </button>
@@ -41,11 +46,13 @@ import Layout from "../layouts/Layout.astro";
         <div class="flex flex-col space-y-2">
           <p
             class="text-base whitespace-nowrap font-medium text-black tracking-[-0.48px]"
+            itemprop="name"
           >
             Abid Aboobaker
           </p>
           <p
             class="text-base whitespace-nowrap text-[12px] italic leading-normal font-normal text-black/50 tracking-[-0.36px]"
+            itemprop="description"
           >
             the 0 → 1 → ∞ guy!
           </p>
@@ -319,7 +326,7 @@ import Layout from "../layouts/Layout.astro";
       >
 	  <span class="flex space-x-1 items-start h-[33px]">
 		<span class="text-sm">##</span> <span>content created by</span>
-		<a href="https://claude.ai" class="underline">claude.ai</a>
+		<a href="https://claude.ai" class="underline">claude.ai & Trae</a>
       </p>
     </span>
 	</div>
