@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nClean up codebase and simplify documentation\n\n- Remove unwanted quickstart/ directory \\(Hugo project\\)\n- Remove .DS_Store file\n- Clean up commented HTML in index.astro\n- Simplify README.md\n- Add CLAUDE.md for AI assistant guidance\n\n🤖 Generated with [Claude Code]\\(https://claude.com/claude-code\\)\n\nCo-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>\nEOF\n\\)\")"
+    ]
+  }
+}
