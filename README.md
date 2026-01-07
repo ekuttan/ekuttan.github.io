@@ -26,6 +26,6 @@ npm run preview
 
 ## Deployment
 
-Automatically deployed to GitHub Pages via GitHub Actions.
+Deployed to Cloudflare Pages. The site is automatically deployed when changes are pushed to the `master` branch.
 
 Site: [ekuttan.in](https://ekuttan.in)
