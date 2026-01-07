@@ -6,7 +6,8 @@
       "Bash(git push)",
       "Bash(npm outdated:*)",
       "Bash(npm install:*)",
-      "Bash(npm run build:*)"
+      "Bash(npm run build:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nUpdate dependencies to latest compatible versions\n\n- Astro: 3.4.3 → 5.16.6\n- @astrojs/check: 0.3.1 → 0.9.6\n- @astrojs/tailwind: 5.0.2 → 6.0.2\n- Tailwind CSS: 3.0.24 → 3.4.19\n- tailwind-scrollbar-hide: 1.1.7 → 4.0.0\n- prettier-plugin-astro: 0.12.1 → 0.14.1\n\nBuild tested and working successfully.\n\n🤖 Generated with [Claude Code]\\(https://claude.com/claude-code\\)\n\nCo-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>\nEOF\n\\)\")"
     ]
   }
 }
