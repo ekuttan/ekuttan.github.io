@@ -1,5 +1,14 @@
 ---
 import Layout from "../layouts/Layout.astro";
+
+// Calculate TinkerHub age dynamically from September 2015
+const tinkerHubStartDate = new Date(2015, 8); // September 2015 (month is 0-indexed)
+const now = new Date();
+let tinkerHubAge = now.getFullYear() - tinkerHubStartDate.getFullYear();
+// Adjust if we haven't reached September yet this year
+if (now.getMonth() < 8) {
+  tinkerHubAge--;
+}
 ---
 
 <Layout title="Abid Aboobaker - Ideapreneur, Developer & Co-founder">
@@ -220,7 +229,7 @@ import Layout from "../layouts/Layout.astro";
                 </svg>
               </span>
             </a>{" "}
-             , a non-profit established 8 years ago that focuses on upskilling
+             , a non-profit established {tinkerHubAge} years ago that focuses on upskilling
             communities through hands-on learning & reciprocal teaching.
           </p>
           <p>
