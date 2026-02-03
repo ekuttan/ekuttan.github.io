@@ -1,0 +1,136 @@
+---
+import Layout from "../../layouts/Layout.astro";
+
+const post = {
+  title: "The Art of Dropping Out",
+  date: "November 10, 2025",
+};
+---
+
+<Layout title={`${post.title} - Abid Aboobaker`}>
+  <main
+    class="flex sm:bg-background bg-white sm:flex-row sm:space-y-0 space-y-[78px] sm:space-x-4 flex-col sm:justify-between sm:h-screen h-full sm:max-h-screen w-full text-black xl:px-[140px] sm:px-10 px-6 2xl:max-w-[1440px] 2xl:w-screen 2xl:mx-auto"
+  >
+    <div
+      class="flex flex-col justify-between min-w-[170px] items-start h-full sm:justify-between sm:pb-[98px] sm:pt-[105px] sm:py-0 pt-[123px]"
+    >
+      <a href="/" class="flex group relative" aria-label="Go to homepage">
+        <img
+          src="/logo.png"
+          class="sm:w-[170px] w-[100px] pl-1 sm:pl-0 h-auto"
+          alt="Abid Aboobaker's Logo"
+        />
+      </a>
+      <div class="hidden sm:flex flex-col items-start space-y-12">
+        <a
+          href="/blog"
+          class="flex text-base font-medium text-black tracking-[-0.48px] px-4 py-2 bg-secondary border border-black rounded-[40px] hover:bg-primary transition-colors"
+        >
+          ← all posts
+        </a>
+        <div class="flex flex-col space-y-2">
+          <p class="text-base whitespace-nowrap font-medium text-black tracking-[-0.48px]">
+            Abid Aboobaker
+          </p>
+          <p class="text-base whitespace-nowrap text-[12px] italic leading-normal font-normal text-black/50 tracking-[-0.36px]">
+            the 0 → 1 → ∞ guy!
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col sm:space-y-[72px] space-y-[78px]">
+      <article
+        class="flex flex-col space-y-8 overflow-y-scroll sm:max-w-[768px] sm:h-screen scrollbar-hide sm:pt-[105px] pb-[115px]"
+      >
+        <header class="flex flex-col space-y-4">
+          <time class="text-[12px] font-medium text-black/50 tracking-[-0.24px] uppercase">
+            {post.date}
+          </time>
+          <h1
+            class="text-black sm:text-[40px] text-[28px] leading-[1.2] sm:tracking-[-1.6px] tracking-[-1.12px] font-medium"
+          >
+            {post.title}
+          </h1>
+        </header>
+
+        <div class="prose prose-lg max-w-none text-black/80 sm:text-[18px] text-[16px] leading-[1.8] tracking-[-0.36px] space-y-6">
+          <p>
+            I dropped out of my social science degree. Not because I was failing, but because I was learning more outside the classroom than inside it. This isn't advice—it's just my story.
+          </p>
+
+          <h2 class="text-black sm:text-[24px] text-[20px] font-medium leading-[1.3] tracking-[-0.48px] pt-4">
+            The credential trap
+          </h2>
+          <p>
+            Growing up in Kerala, education was everything. A degree wasn't just a piece of paper—it was proof that you'd made it. Your parents could tell the neighbors. Your marriage prospects improved. The system was designed to make you feel incomplete without that certificate.
+          </p>
+          <p>
+            But I noticed something strange: the most interesting people I met—the ones building companies, creating art, solving real problems—many of them had unconventional paths. Some had degrees. Some didn't. What they all had was relentless curiosity.
+          </p>
+
+          <h2 class="text-black sm:text-[24px] text-[20px] font-medium leading-[1.3] tracking-[-0.48px] pt-4">
+            Learning to learn
+          </h2>
+          <p>
+            When I left formal education, I didn't stop learning. If anything, I learned more aggressively. The difference was that I got to choose what to learn and why.
+          </p>
+          <p>
+            I taught myself to code through online tutorials and building things that broke. I learned design by copying things I admired until I developed my own taste. I learned about business by starting businesses—most of which failed.
+          </p>
+          <p>
+            The learning wasn't structured or credentialed. But it was real.
+          </p>
+
+          <h2 class="text-black sm:text-[24px] text-[20px] font-medium leading-[1.3] tracking-[-0.48px] pt-4">
+            The privilege of risk
+          </h2>
+          <p>
+            I want to be honest about something: dropping out is a privilege not everyone has. I had a family that, while confused by my choices, didn't disown me. I had access to the internet and a laptop. I had friends who believed in me when I didn't believe in myself.
+          </p>
+          <p>
+            Not everyone has these safety nets. If you're considering dropping out and you don't have a support system, think carefully. The romantic narrative of the dropout founder ignores the many who tried and failed without anyone to catch them.
+          </p>
+
+          <h2 class="text-black sm:text-[24px] text-[20px] font-medium leading-[1.3] tracking-[-0.48px] pt-4">
+            What I'd tell my younger self
+          </h2>
+          <p>
+            The degree doesn't matter as much as you think. But neither does the dropout story. What matters is whether you're learning, building, and growing.
+          </p>
+          <p>
+            Some people thrive in formal education. Some don't. Neither path is superior. The only wrong choice is staying somewhere that's making you smaller instead of bigger.
+          </p>
+          <p>
+            Curiosity beats credentials. It always has. But curiosity without discipline is just distraction. The art isn't in dropping out—it's in knowing what you're dropping into.
+          </p>
+
+          <h2 class="text-black sm:text-[24px] text-[20px] font-medium leading-[1.3] tracking-[-0.48px] pt-4">
+            Looking back
+          </h2>
+          <p>
+            Would I make the same choice today? I honestly don't know. The tech industry has changed. Credentials are becoming both more and less important simultaneously. What I do know is that the choice led me here—co-founding TinkerHub, building products I'm proud of, writing this post.
+          </p>
+          <p>
+            The path was unconventional. But it was mine. And in the end, that's the only path any of us can walk.
+          </p>
+        </div>
+      </article>
+      <div class="flex sm:hidden items-start justify-between pb-[106px]">
+        <div class="flex flex-col space-y-2 items-start">
+          <p class="text-base whitespace-nowrap font-medium text-black tracking-[-0.48px]">
+            Abid Aboobaker
+          </p>
+          <p class="text-base whitespace-nowrap text-[12px] italic leading-normal font-normal text-black/50 tracking-[-0.36px]">
+            the 0 → 1 → ∞ guy!
+          </p>
+        </div>
+        <a
+          href="/blog"
+          class="flex text-base font-medium text-black tracking-[-0.48px] px-4 py-2 bg-secondary border border-black rounded-[40px]"
+        >
+          ← posts
+        </a>
+      </div>
+    </div>
+  </main>
+</Layout>

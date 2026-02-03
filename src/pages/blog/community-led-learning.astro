@@ -1,0 +1,133 @@
+---
+import Layout from "../../layouts/Layout.astro";
+
+const post = {
+  title: "Why Community-Led Learning Works",
+  date: "December 28, 2025",
+};
+---
+
+<Layout title={`${post.title} - Abid Aboobaker`}>
+  <main
+    class="flex sm:bg-background bg-white sm:flex-row sm:space-y-0 space-y-[78px] sm:space-x-4 flex-col sm:justify-between sm:h-screen h-full sm:max-h-screen w-full text-black xl:px-[140px] sm:px-10 px-6 2xl:max-w-[1440px] 2xl:w-screen 2xl:mx-auto"
+  >
+    <div
+      class="flex flex-col justify-between min-w-[170px] items-start h-full sm:justify-between sm:pb-[98px] sm:pt-[105px] sm:py-0 pt-[123px]"
+    >
+      <a href="/" class="flex group relative" aria-label="Go to homepage">
+        <img
+          src="/logo.png"
+          class="sm:w-[170px] w-[100px] pl-1 sm:pl-0 h-auto"
+          alt="Abid Aboobaker's Logo"
+        />
+      </a>
+      <div class="hidden sm:flex flex-col items-start space-y-12">
+        <a
+          href="/blog"
+          class="flex text-base font-medium text-black tracking-[-0.48px] px-4 py-2 bg-secondary border border-black rounded-[40px] hover:bg-primary transition-colors"
+        >
+          ← all posts
+        </a>
+        <div class="flex flex-col space-y-2">
+          <p class="text-base whitespace-nowrap font-medium text-black tracking-[-0.48px]">
+            Abid Aboobaker
+          </p>
+          <p class="text-base whitespace-nowrap text-[12px] italic leading-normal font-normal text-black/50 tracking-[-0.36px]">
+            the 0 → 1 → ∞ guy!
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col sm:space-y-[72px] space-y-[78px]">
+      <article
+        class="flex flex-col space-y-8 overflow-y-scroll sm:max-w-[768px] sm:h-screen scrollbar-hide sm:pt-[105px] pb-[115px]"
+      >
+        <header class="flex flex-col space-y-4">
+          <time class="text-[12px] font-medium text-black/50 tracking-[-0.24px] uppercase">
+            {post.date}
+          </time>
+          <h1
+            class="text-black sm:text-[40px] text-[28px] leading-[1.2] sm:tracking-[-1.6px] tracking-[-1.12px] font-medium"
+          >
+            {post.title}
+          </h1>
+        </header>
+
+        <div class="prose prose-lg max-w-none text-black/80 sm:text-[18px] text-[16px] leading-[1.8] tracking-[-0.36px] space-y-6">
+          <p>
+            After 10 years of running TinkerHub, I've watched thousands of students transform—not through lectures or certifications, but through teaching each other. There's something almost magical about peer-to-peer learning that traditional education consistently misses.
+          </p>
+
+          <h2 class="text-black sm:text-[24px] text-[20px] font-medium leading-[1.3] tracking-[-0.48px] pt-4">
+            The teacher learns twice
+          </h2>
+          <p>
+            Here's something counterintuitive: the person who learns the most in any teaching interaction is the teacher. When you have to explain something to someone else, you're forced to confront the gaps in your own understanding.
+          </p>
+          <p>
+            At TinkerHub, we don't just encourage students to learn—we encourage them to teach. A second-year student who just learned React teaches first-years. A fourth-year who cracked their first system design interview mentors third-years. The cycle is intentional.
+          </p>
+
+          <h2 class="text-black sm:text-[24px] text-[20px] font-medium leading-[1.3] tracking-[-0.48px] pt-4">
+            Proximity matters
+          </h2>
+          <p>
+            There's a concept I call "learning proximity." A world-class expert might know everything about a subject, but they've forgotten what it's like to not know. They can't remember what confused them when they started.
+          </p>
+          <p>
+            Someone who learned the same thing six months ago? They remember exactly where they struggled. They know which YouTube video finally made it click. They can say "I was confused about this exact thing" and mean it.
+          </p>
+          <p>
+            This proximity creates empathy. And empathy creates effective teaching.
+          </p>
+
+          <h2 class="text-black sm:text-[24px] text-[20px] font-medium leading-[1.3] tracking-[-0.48px] pt-4">
+            Identity shifts
+          </h2>
+          <p>
+            When a student becomes a teacher, something shifts in their identity. They're no longer just consuming—they're contributing. They belong to the community in a different way.
+          </p>
+          <p>
+            I've seen shy students transform into confident speakers. I've seen students who thought they weren't "smart enough" realize they had valuable knowledge to share. The act of teaching makes you see yourself differently.
+          </p>
+
+          <h2 class="text-black sm:text-[24px] text-[20px] font-medium leading-[1.3] tracking-[-0.48px] pt-4">
+            Building the network effect
+          </h2>
+          <p>
+            Traditional education scales linearly: one teacher, many students. Community-led learning scales exponentially: every student is a potential teacher.
+          </p>
+          <p>
+            When we started TinkerHub in 2015, we had a handful of mentors. Today, we have thousands of students teaching other students across Kerala. The knowledge doesn't bottleneck through a few experts—it flows freely through the network.
+          </p>
+
+          <h2 class="text-black sm:text-[24px] text-[20px] font-medium leading-[1.3] tracking-[-0.48px] pt-4">
+            What this means for you
+          </h2>
+          <p>
+            If you're learning something, find someone to teach it to. Start a study group. Write a blog post explaining what you learned. Record a video tutorial.
+          </p>
+          <p>
+            You don't need to be an expert. You just need to be one step ahead of your student. That's enough. That's always been enough.
+          </p>
+        </div>
+      </article>
+      <div class="flex sm:hidden items-start justify-between pb-[106px]">
+        <div class="flex flex-col space-y-2 items-start">
+          <p class="text-base whitespace-nowrap font-medium text-black tracking-[-0.48px]">
+            Abid Aboobaker
+          </p>
+          <p class="text-base whitespace-nowrap text-[12px] italic leading-normal font-normal text-black/50 tracking-[-0.36px]">
+            the 0 → 1 → ∞ guy!
+          </p>
+        </div>
+        <a
+          href="/blog"
+          class="flex text-base font-medium text-black tracking-[-0.48px] px-4 py-2 bg-secondary border border-black rounded-[40px]"
+        >
+          ← posts
+        </a>
+      </div>
+    </div>
+  </main>
+</Layout>
