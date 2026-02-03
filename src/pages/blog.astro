@@ -1,0 +1,114 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+// Sample blog posts data
+const posts = [
+  {
+    title: "Building Products from 0 to 1",
+    date: "January 15, 2026",
+    excerpt: "The journey of building a product from scratch is never linear. Here's what I've learned from shipping multiple MVPs over the years.",
+    slug: "#"
+  },
+  {
+    title: "Why Community-Led Learning Works",
+    date: "December 28, 2025",
+    excerpt: "After 10 years of running TinkerHub, I've seen firsthand how reciprocal teaching transforms both the learner and the teacher.",
+    slug: "#"
+  },
+  {
+    title: "The Art of Dropping Out",
+    date: "November 10, 2025",
+    excerpt: "My unconventional path from social science dropout to product builder. Spoiler: curiosity beats credentials.",
+    slug: "#"
+  }
+];
+---
+
+<Layout title="Blog - Abid Aboobaker">
+  <main
+    class="flex sm:bg-background bg-white sm:flex-row sm:space-y-0 space-y-[78px] sm:space-x-4 flex-col sm:justify-between sm:h-screen h-full sm:max-h-screen w-full text-black xl:px-[140px] sm:px-10 px-6 2xl:max-w-[1440px] 2xl:w-screen 2xl:mx-auto"
+  >
+    <div
+      class="flex flex-col justify-between min-w-[170px] items-start h-full sm:justify-between sm:pb-[98px] sm:pt-[105px] sm:py-0 pt-[123px]"
+    >
+      <a href="/" class="flex group relative" aria-label="Go to homepage">
+        <img
+          src="/logo.png"
+          class="sm:w-[170px] w-[100px] pl-1 sm:pl-0 h-auto"
+          alt="Abid Aboobaker's Logo"
+        />
+      </a>
+      <div class="hidden sm:flex flex-col items-start space-y-12">
+        <a
+          href="/"
+          class="flex text-base font-medium text-black tracking-[-0.48px] px-4 py-2 bg-secondary border border-black rounded-[40px] hover:bg-primary transition-colors"
+        >
+          ← back home
+        </a>
+        <div class="flex flex-col space-y-2">
+          <p class="text-base whitespace-nowrap font-medium text-black tracking-[-0.48px]">
+            Abid Aboobaker
+          </p>
+          <p class="text-base whitespace-nowrap text-[12px] italic leading-normal font-normal text-black/50 tracking-[-0.36px]">
+            the 0 → 1 → ∞ guy!
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col sm:space-y-[72px] space-y-[78px]">
+      <div
+        class="flex flex-col space-y-8 overflow-y-scroll sm:max-w-[768px] sm:h-screen scrollbar-hide sm:pt-[105px]"
+      >
+        <div class="relative">
+          <h1
+            class="text-black sm:text-[40px] text-[28px] leading-[40.88px] sm:leading-normal sm:tracking-[-1.6px] tracking-[-1.12px] font-normal"
+          >
+            Thoughts & musings ✍️
+          </h1>
+          <p class="mt-4 text-black/60 sm:text-[18px] text-[16px] leading-[27px] tracking-[-0.36px]">
+            Occasional writings on products, communities, and the art of building.
+          </p>
+        </div>
+        <div class="flex flex-col space-y-8 pb-[115px]">
+          {posts.map((post) => (
+            <article class="flex flex-col space-y-3 p-6 bg-white sm:bg-background border border-black/10 rounded-2xl hover:border-black/30 transition-colors">
+              <time class="text-[12px] font-medium text-black/50 tracking-[-0.24px] uppercase">
+                {post.date}
+              </time>
+              <h2 class="text-black sm:text-[24px] text-[20px] font-medium leading-[1.3] tracking-[-0.48px]">
+                <a href={post.slug} class="hover:text-black/70 transition-colors">
+                  {post.title}
+                </a>
+              </h2>
+              <p class="text-black/70 sm:text-[16px] text-[14px] leading-[1.6] tracking-[-0.32px]">
+                {post.excerpt}
+              </p>
+              <a
+                href={post.slug}
+                class="text-[14px] font-medium text-black tracking-[-0.28px] hover:underline inline-flex items-center gap-1"
+              >
+                Read more →
+              </a>
+            </article>
+          ))}
+        </div>
+      </div>
+      <div class="flex sm:hidden items-start justify-between pb-[106px]">
+        <div class="flex flex-col space-y-2 items-start">
+          <p class="text-base whitespace-nowrap font-medium text-black tracking-[-0.48px]">
+            Abid Aboobaker
+          </p>
+          <p class="text-base whitespace-nowrap text-[12px] italic leading-normal font-normal text-black/50 tracking-[-0.36px]">
+            the 0 → 1 → ∞ guy!
+          </p>
+        </div>
+        <a
+          href="/"
+          class="flex text-base font-medium text-black tracking-[-0.48px] px-4 py-2 bg-secondary border border-black rounded-[40px]"
+        >
+          ← home
+        </a>
+      </div>
+    </div>
+  </main>
+</Layout>
