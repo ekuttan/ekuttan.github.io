@@ -22,7 +22,6 @@ astro check          # Type check only
 
 **Pages**:
 - `src/pages/index.astro` - Main portfolio page with bio, company links, contact
-- `src/pages/blog.astro` - Blog listing page with sample posts
 
 **Layout**: `src/layouts/Layout.astro` - Shared HTML shell with SEO meta tags (OG, Twitter Cards), canonical URL handling, and DM Sans font loading
 
