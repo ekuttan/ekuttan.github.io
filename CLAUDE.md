@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Personal portfolio website for Abid Aboobaker (ekuttan.github.io), built with Astro 5 and Tailwind CSS. Deployed to GitHub Pages with canonical URL at ekuttan.in.
+Personal portfolio website for Abid Aboobaker (ekuttan.in), built with Astro 5 and Tailwind CSS. Deployed to Cloudflare Pages.
 
 ## Development Commands
 

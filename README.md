@@ -1,4 +1,4 @@
-# ekuttan.github.io
+# ekuttan.in
 
 Personal portfolio website for Abid Aboobaker.
 
@@ -20,7 +20,7 @@ npm run preview
 
 ## Tech Stack
 
-- Astro 3.4
+- Astro 5
 - Tailwind CSS
 - TypeScript
 
