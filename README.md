@@ -1,31 +1,31 @@
 # ekuttan.in
 
-Personal portfolio website for Abid Aboobaker.
+The digital home of a college dropout who accidentally became good at building things.
 
-## Development
+## What's This?
+
+A portfolio site for Abid Aboobaker — a tinkerer, coder, and professional "0 → 1 → ∞" enthusiast. Built with more care than my college attendance record.
+
+## Running Locally
 
 ```bash
-# Install dependencies
-npm install
-
-# Start dev server
-npm run dev
-
-# Build for production
-npm run build
-
-# Preview build
-npm run preview
+npm install    # Summon the dependencies
+npm run dev    # Spin up localhost:4321
+npm run build  # Ship it
 ```
 
 ## Tech Stack
 
-- Astro 5
-- Tailwind CSS
-- TypeScript
+- **Astro 5** — because React was too mainstream
+- **Tailwind CSS** — for people who think CSS is a team sport
+- **TypeScript** — strict mode, because I don't trust myself
 
 ## Deployment
 
-Deployed to Cloudflare Pages. The site is automatically deployed when changes are pushed to the `master` branch.
+Pushes to `master` → Cloudflare Pages → [ekuttan.in](https://ekuttan.in)
 
-Site: [ekuttan.in](https://ekuttan.in)
+No CI/CD drama. Just vibes.
+
+## License
+
+Do whatever you want with it. But if you copy my bio, at least drop out of a different degree.
