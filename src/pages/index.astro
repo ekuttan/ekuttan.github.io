@@ -111,9 +111,9 @@ if (now.getMonth() < 8) {
               href="https://www.truecaller.com/"
               target="_blank"
               rel="noopener noreferrer"
-              class="relative underline decoration-dotted sm:no-underline"
+              class="relative"
             >
-              Truecaller
+              <span class="underline decoration-dotted sm:no-underline">Truecaller</span>
               <span class="absolute hidden sm:flex -bottom-0.5 left-0">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -135,9 +135,9 @@ if (now.getMonth() < 8) {
               href="https://unacademy.com/"
               target="_blank"
               rel="noopener noreferrer"
-              class="relative underline decoration-dotted sm:no-underline"
+              class="relative"
             >
-              Unacademy
+              <span class="underline decoration-dotted sm:no-underline">Unacademy</span>
               <span class="absolute hidden sm:flex -bottom-0.5 left-0">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -159,9 +159,9 @@ if (now.getMonth() < 8) {
               href="http://www.chillr.in/"
               target="_blank"
               rel="noopener noreferrer"
-              class="relative underline decoration-dotted sm:no-underline"
+              class="relative"
             >
-              Chillr
+              <span class="underline decoration-dotted sm:no-underline">Chillr</span>
               <span class="absolute hidden sm:flex -bottom-0.5 left-0">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -183,9 +183,9 @@ if (now.getMonth() < 8) {
               href="https://www.zestmoney.in/"
               target="_blank"
               rel="noopener noreferrer"
-              class="relative underline decoration-dotted sm:no-underline"
+              class="relative"
             >
-              Zestmoney
+              <span class="underline decoration-dotted sm:no-underline">Zestmoney</span>
               <span class="absolute hidden sm:flex -bottom-0.5 left-0">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -210,9 +210,9 @@ if (now.getMonth() < 8) {
               href="https://www.tinkerhub.org/"
               target="_blank"
               rel="noopener noreferrer"
-              class="relative underline decoration-dotted sm:no-underline"
+              class="relative"
             >
-              Tinkerhub
+              <span class="underline decoration-dotted sm:no-underline">Tinkerhub</span>
               <span class="absolute hidden sm:flex -bottom-0.5 left-0">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -244,8 +244,8 @@ if (now.getMonth() < 8) {
               href="https://scoop.app/"
               target="_blank"
               rel="noopener noreferrer"
-              class="relative underline decoration-dotted sm:no-underline"
-            > Scoop,
+              class="relative"
+            ><span class="underline decoration-dotted sm:no-underline">Scoop</span>,
             <span class="absolute hidden sm:flex -bottom-0.5 left-0">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -266,9 +266,9 @@ if (now.getMonth() < 8) {
               href="https://hoomans.dev/"
               target="_blank"
               rel="noopener noreferrer"
-              class="relative underline decoration-dotted sm:no-underline"
+              class="relative"
             >
-              a small product studio
+              <span class="underline decoration-dotted sm:no-underline">a small product studio</span>
               <span class="absolute hidden sm:flex -bottom-0.5 left-0">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -288,7 +288,7 @@ if (now.getMonth() < 8) {
              fuelled by my passion for building and creating.
           </p>
 
-	<p>We recenlty launched a slack app - <a href="celebrationsbot.com" class="underline decoration-dotted sm:no-underline">CelebrationsBot</a> that being used by loved by thousands of Slack users.</p>
+	<p>We recenlty launched a slack app - <a href="celebrationsbot.com" class="relative"><span class="underline decoration-dotted sm:no-underline">CelebrationsBot</span></a> that being used by loved by thousands of Slack users.</p>
 
         </div>
         <!-- Footer commented out
@@ -348,7 +348,7 @@ if (now.getMonth() < 8) {
   // Handle clicks on each button.
   buttons.forEach((button) => {
     button.addEventListener("click", async () => {
-      const textToCopy = "ab@hoomans.dev";
+      const textToCopy = "ab@hoomans.co";
 
       try {
         await navigator.clipboard.writeText(textToCopy);
