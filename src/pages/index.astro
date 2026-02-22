@@ -13,40 +13,54 @@ if (now.getMonth() < 8) {
 
 <Layout title="Abid Aboobaker - Ideapreneur, Developer & Co-founder">
   <main
-    class="flex sm:bg-background bg-white sm:flex-row sm:space-y-0 space-y-[78px] sm:space-x-4 flex-col sm:justify-between sm:h-screen h-full sm:max-h-screen w-full text-black xl:px-[140px] sm:px-10 px-6 2xl:max-w-[1440px] 2xl:w-screen 2xl:mx-auto"
+    class="flex sm:bg-background bg-white dark:bg-dark-bg sm:flex-row sm:space-y-0 space-y-[78px] sm:space-x-4 flex-col sm:justify-between sm:h-screen h-full sm:max-h-screen w-full text-black dark:text-gray-100 xl:px-[140px] sm:px-10 px-6 2xl:max-w-[1440px] 2xl:w-screen 2xl:mx-auto transition-colors duration-300"
     itemscope itemtype="http://schema.org/Person"
   >
     <div
       class="flex flex-col justify-between min-w-[170px] items-start h-full sm:justify-between sm:pb-[98px] sm:pt-[105px] sm:py-0 pt-[123px]"
     >
-      <button class="flex group relative" aria-label="View profile picture">
-        <img
-          src="/logo.png"
-          class="sm:w-[170px] w-[100px] pl-1 sm:pl-0 h-auto"
-          alt="Abid Aboobaker's Logo"
-          itemprop="logo"
-        />
-        <div
-          class="absolute -right-20 z-50 -top-11 invisible group-hover:visible group-hover:animate-fadeIn"
-        >
+      <div class="flex items-start gap-4">
+        <button class="flex group relative" aria-label="View profile picture">
           <img
-            src="/abid.png"
-            class="sm:h-[284px] w-[100px] w-auto"
-            alt="Portrait of Abid Aboobaker"
-            itemprop="image"
+            src="/logo.png"
+            class="sm:w-[170px] w-[100px] pl-1 sm:pl-0 h-auto dark:invert"
+            alt="Abid Aboobaker's Logo"
+            itemprop="logo"
           />
-        </div>
-      </button>
+          <div
+            class="absolute -right-20 z-50 -top-11 invisible group-hover:visible group-hover:animate-fadeIn"
+          >
+            <img
+              src="/abid.png"
+              class="sm:h-[284px] w-[100px] w-auto"
+              alt="Portrait of Abid Aboobaker"
+              itemprop="image"
+            />
+          </div>
+        </button>
+        <button
+          id="theme-toggle"
+          class="mt-1 p-2 rounded-full bg-black/5 dark:bg-white/10 hover:bg-black/10 dark:hover:bg-white/20 transition-colors duration-200"
+          aria-label="Toggle dark mode"
+        >
+          <svg id="theme-icon-sun" class="w-5 h-5 hidden dark:block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+          </svg>
+          <svg id="theme-icon-moon" class="w-5 h-5 block dark:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+          </svg>
+        </button>
+      </div>
       <div class="hidden sm:flex flex-col items-start space-y-12">
         <div class="flex group">
           <button
-            class="group-hover:hidden flex text-base font-medium text-black tracking-[-0.48px] px-4 py-2 bg-secondary border border-black rounded-[40px]"
+            class="group-hover:hidden flex text-base font-medium text-black dark:text-black tracking-[-0.48px] px-4 py-2 bg-secondary border border-black dark:border-secondary rounded-[40px]"
             aria-label="Contact me"
           >
             write to me
           </button>
           <button
-            class="copy-button group-hover:flex whitespace-nowrap group-hover:animate-fadeInLeft hidden text-base font-medium text-white tracking-[-0.48px] px-4 py-2 bg-black rounded-[40px]"
+            class="copy-button group-hover:flex whitespace-nowrap group-hover:animate-fadeInLeft hidden text-base font-medium text-white tracking-[-0.48px] px-4 py-2 bg-black dark:bg-white dark:text-black rounded-[40px]"
             aria-label="Copy email address"
           >
             📫 copy email
@@ -54,13 +68,13 @@ if (now.getMonth() < 8) {
         </div>
         <div class="flex flex-col space-y-2">
           <p
-            class="text-base whitespace-nowrap font-medium text-black tracking-[-0.48px]"
+            class="text-base whitespace-nowrap font-medium text-black dark:text-gray-100 tracking-[-0.48px]"
             itemprop="name"
           >
             Abid Aboobaker
           </p>
           <p
-            class="text-base whitespace-nowrap text-[12px] italic leading-normal font-normal text-black/50 tracking-[-0.36px]"
+            class="text-base whitespace-nowrap text-[12px] italic leading-normal font-normal text-black/50 dark:text-gray-400 tracking-[-0.36px]"
             itemprop="description"
           >
             the 0 → 1 → ∞ guy!
@@ -74,7 +88,7 @@ if (now.getMonth() < 8) {
       >
         <div class="relative">
           <h2
-            class="text-black sm:text-[40px] text-[28px] leading-[40.88px] sm:leading-normal sm:tracking-[-1.6px] tracking-[-1.12px] font-normal"
+            class="text-black dark:text-gray-100 sm:text-[40px] text-[28px] leading-[40.88px] sm:leading-normal sm:tracking-[-1.6px] tracking-[-1.12px] font-normal"
           >
             A lifelong{" "}
             <span class="relative">
@@ -102,7 +116,7 @@ if (now.getMonth() < 8) {
           </h2>
         </div>
         <div
-          class="flex flex-col space-y-4 text-black sm:text-[24px] text-[18px] sm:leading-[33px] leading-[27px] font-normal sm:tracking-[-0.48px] tracking-[-0.36px]"
+          class="flex flex-col space-y-4 text-black dark:text-gray-200 sm:text-[24px] text-[18px] sm:leading-[33px] leading-[27px] font-normal sm:tracking-[-0.48px] tracking-[-0.36px]"
         >
           <div class="">
             My experience spans managing product
@@ -124,7 +138,7 @@ if (now.getMonth() < 8) {
                 >
                   <path
                     d="M0.65094 1.73594C4.52075 0.106544 9.91008 2.15635 13.6918 2.91777C20.7408 4.33702 28.7388 6.68215 35.9835 5.40368C38.8457 4.89859 40.9089 3.17956 43.8895 3.20303C51.2231 3.26078 58.4159 5.0369 65.794 5.0369C70.9321 5.0369 76.1564 3.96707 81.3208 3.56981C87.0364 3.13015 92.4737 3.93658 98.2127 3.93658"
-                    stroke="black"
+                    stroke="currentColor"
                     stroke-linecap="round"
                     stroke-dasharray="2 2"></path>
                 </svg>
@@ -148,7 +162,7 @@ if (now.getMonth() < 8) {
                 >
                   <path
                     d="M116.352 4.0024C102.577 4.0024 88.8028 4.0024 75.0284 4.0024C61.2421 4.0024 47.3014 4.56286 33.5423 3.55412C28.6597 3.19616 23.7224 2.58745 18.8713 1.88326C17.5973 1.69833 16.2255 1.21768 14.9183 1.45536C12.7022 1.85829 10.6973 3.08708 8.35713 3.24847C7.01479 3.34105 5.6485 3.26885 4.30224 3.26885C3.01853 3.26885 -0.832593 3.26885 0.451115 3.26885"
-                    stroke="black"
+                    stroke="currentColor"
                     stroke-linecap="round"
                     stroke-dasharray="2 2"></path>
                 </svg>
@@ -172,7 +186,7 @@ if (now.getMonth() < 8) {
                 >
                   <path
                     d="M0.690308 1.63562C10.2799 1.63562 19.8326 0.902069 29.4209 0.902069C31.8951 0.902069 37.6505 -0.211461 39.5683 2.18578C39.8572 2.54681 44.8029 1.11333 45.4367 0.902069"
-                    stroke="black"
+                    stroke="currentColor"
                     stroke-linecap="round"
                     stroke-dasharray="2 2"></path>
                 </svg>
@@ -196,7 +210,7 @@ if (now.getMonth() < 8) {
                 >
                   <path
                     d="M1.00562 1.04083H106.336"
-                    stroke="black"
+                    stroke="currentColor"
                     stroke-linecap="round"
                     stroke-dasharray="2 2"></path>
                 </svg>
@@ -223,7 +237,7 @@ if (now.getMonth() < 8) {
                 >
                   <path
                     d="M1.26953 3.42502C24.0627 3.42502 46.8559 3.42502 69.6491 3.42502C74.9545 3.42502 102.496 -1.89038 105.154 3.42502"
-                    stroke="black"
+                    stroke="currentColor"
                     stroke-linecap="round"
                     stroke-dasharray="2 2"></path>
                 </svg>
@@ -256,7 +270,7 @@ if (now.getMonth() < 8) {
               >
                 <path
                   d="M0.690308 1.63562C10.2799 1.63562 19.8326 0.902069 29.4209 0.902069C31.8951 0.902069 37.6505 -0.211461 39.5683 2.18578C39.8572 2.54681 44.8029 1.11333 45.4367 0.902069"
-                  stroke="black"
+                  stroke="currentColor"
                   stroke-linecap="round"
                   stroke-dasharray="2 2"></path>
               </svg>
@@ -279,7 +293,7 @@ if (now.getMonth() < 8) {
                 >
                   <path
                     d="M230.108 2.61327C172.566 2.61327 115.304 1.29828 57.8445 1.29828C38.5984 1.29828 20.2863 5.24325 1.29987 5.24325"
-                    stroke="black"
+                    stroke="currentColor"
                     stroke-linecap="round"
                     stroke-dasharray="2 2"></path>
                 </svg>
@@ -304,24 +318,24 @@ if (now.getMonth() < 8) {
       <div class="flex sm:hidden items-start justify-between">
         <div class="flex flex-col space-y-2 items-start">
           <p
-            class="text-base whitespace-nowrap font-medium text-black tracking-[-0.48px]"
+            class="text-base whitespace-nowrap font-medium text-black dark:text-gray-100 tracking-[-0.48px]"
           >
             Abid Aboobaker
           </p>
           <p
-            class="text-base whitespace-nowrap text-[12px] italic leading-normal font-normal text-black/50 tracking-[-0.36px]"
+            class="text-base whitespace-nowrap text-[12px] italic leading-normal font-normal text-black/50 dark:text-gray-400 tracking-[-0.36px]"
           >
             the 0 → 1 → ∞ guy!
           </p>
         </div>
         <div class="flex group">
           <button
-            class="group-hover:hidden flex text-base font-medium text-black tracking-[-0.48px] px-4 py-2 bg-secondary border border-black rounded-[40px]"
+            class="group-hover:hidden flex text-base font-medium text-black dark:text-black tracking-[-0.48px] px-4 py-2 bg-secondary border border-black dark:border-secondary rounded-[40px]"
           >
             write to me
           </button>
           <button
-            class="copy-button group-hover:flex whitespace-nowrap group-hover:animate-fadeInLeft hidden text-base font-medium text-white tracking-[-0.48px] px-4 py-2 bg-black rounded-[40px]"
+            class="copy-button group-hover:flex whitespace-nowrap group-hover:animate-fadeInLeft hidden text-base font-medium text-white tracking-[-0.48px] px-4 py-2 bg-black dark:bg-white dark:text-black rounded-[40px]"
           >
             📫 copy email
           </button>
@@ -362,5 +376,15 @@ if (now.getMonth() < 8) {
         console.error(error);
       }
     });
+  });
+
+  // Dark mode toggle
+  const themeToggle = document.getElementById("theme-toggle");
+  const themeColorMeta = document.getElementById("theme-color-meta");
+
+  themeToggle?.addEventListener("click", () => {
+    const isDark = document.documentElement.classList.toggle("dark");
+    localStorage.setItem("theme", isDark ? "dark" : "light");
+    themeColorMeta?.setAttribute("content", isDark ? "#1A1A1A" : "#FFE653");
   });
 </script>

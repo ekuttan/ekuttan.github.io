@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
+  darkMode: "class",
   theme: {
     extend: {
       fontFamily: {
@@ -10,6 +11,8 @@ export default {
         primary: "#FFE653",
         secondary: "#74E7D2",
         background: "#EEEBE7",
+        "dark-bg": "#1A1A1A",
+        "dark-surface": "#242424",
       },
       keyframes: {
         tinkerer: {
